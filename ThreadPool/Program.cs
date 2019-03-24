@@ -9,6 +9,14 @@ namespace ThreadPool
 		{
 //			int concurrencyLevel = 2;
 //			Process.GetCurrentProcess().ProcessorAffinity = new IntPtr((1 << concurrencyLevel) - 1);
+			
+			Console.WriteLine("\n----------=======My ThreadPool tests=======----------");
+			var testsMy = new ThreadPoolWithQueueTests();
+			testsMy.LongCalculations();
+			testsMy.ShortCalculations();
+			testsMy.ExtremelyShortCalculations();
+			testsMy.InnerShortCalculations();
+			testsMy.InnerExtremelyShortCalculations();
 
 			Console.WriteLine("\n----------=======DotNet ThreadPool Tasks tests=======----------");
 			var testsDNT = new DotNetThreadPoolTaskWrapperTests();

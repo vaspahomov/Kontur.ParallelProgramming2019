@@ -6,6 +6,7 @@ namespace ThreadPool
 {
 	public class DotNetThreadPoolWrapperTests : ThreadPoolTests<DotNetThreadPoolWrapper> { }
 	public class DotNetThreadPoolTaskWrapperTests : ThreadPoolTests<DotNetThreadPoolTaskWrapper> { }
+	public class ThreadPoolWithQueueTests : ThreadPoolTests<ThreadPoolWithQueue> { }
 
 	public abstract class ThreadPoolTests<T> where T : IThreadPool, new()
 	{

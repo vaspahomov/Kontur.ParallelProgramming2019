@@ -50,6 +50,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ThreadPoolTests.cs" />
+    <Compile Include="ThreadPoolWithQueue.cs" />
     <Compile Include="WorkStealingQueue.cs" />
   </ItemGroup>
   <ItemGroup>
